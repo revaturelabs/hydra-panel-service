@@ -18,7 +18,7 @@ public class PanelRepositoryMessagingService {
 	@Autowired
 	private PanelRepositoryRequestDispatcher panelRepositoryRequestDispatcer;
 
-	@RabbitListener(queues = "revature.caliber.repos.panel")
+	@RabbitListener(queues = "revature.hydra.repos.panel")
 	public SimplePanel receiveSingleSimplePanelRequest(String message) {
 		JsonParser parser = new JsonParser();
 		JsonElement element = parser.parse(message);
@@ -28,8 +28,8 @@ public class PanelRepositoryMessagingService {
 
 	}
 	
-	@RabbitListener(queues = "revature.caliber.service.panel.list")
-//	@RabbitListener(queues = "revature.caliber.service.test.list")
+	@RabbitListener(queues = "revature.hydra.service.panel.list")
+//	@RabbitListener(queues = "revature.hydra.service.test.list")
 	public List<Panel> receiveListPanelRequest(String message) {
 		JsonParser parser = new JsonParser();
 		JsonElement element = parser.parse(message);

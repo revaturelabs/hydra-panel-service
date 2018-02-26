@@ -24,7 +24,7 @@ public class PanelRepositoryServiceApplication {
     public Docket api() { 
         return new Docket(DocumentationType.SWAGGER_2)  
           .select()                                  
-          .apis(RequestHandlerSelectors.basePackage("com.revature.caliber.controller"))              
+          .apis(RequestHandlerSelectors.basePackage("com.revature.hydra.controller"))              
           .paths(PathSelectors.any())                          
           .build();
     }

@@ -29,7 +29,7 @@ public interface PanelRepository extends JpaRepository<SimplePanel, Integer> {
 	 * 
 	 * @return a list of panels that have a status of Repanel
 	 */
-	@Query("SELECT p FROM SimplePanel p WHERE p.statusId = com.revature.caliber.model.PanelStatus.Repanel ORDER BY p.interviewDate DESC")
+	@Query("SELECT p FROM SimplePanel p WHERE p.statusId = com.revature.hydra.model.PanelStatus.Repanel ORDER BY p.interviewDate DESC")
 	List<SimplePanel> findAllRepanels();
 
 	/**

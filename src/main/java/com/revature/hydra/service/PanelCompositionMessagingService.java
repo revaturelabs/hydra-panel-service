@@ -18,7 +18,7 @@ public class PanelCompositionMessagingService {
 	private static final String SINGLE_TRAINEE_ROUTING_KEY = "JyoH3uRmktGn9MnW";
 	private static final String SINGLE_TRAINER_ROUTING_KEY = "9xdaX72tPYuz8xDP";
 	private static final String SINGLE_PANEL_FEEDBACK_ROUTING_KEY = "4jZ2GMxLP7VyQPBn";
-	private static final String RABBIT_REPO_EXCHANGE = "revature.caliber.repos";
+	private static final String RABBIT_REPO_EXCHANGE = "revature.hydra.repos";
 
 	public SimpleTrainee sendSingleSimpleTraineeRequest(Integer traineeId) {
 		JsonObject traineeRequest = new JsonObject();
