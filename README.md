@@ -1,1 +1,2 @@
-## The Hydra-Panel-Repository-Service is a service designed to help to manage and update panel data.
+## Hydra-Panel-Repository-Service
+This service is designed to help to manage and update panel data.
