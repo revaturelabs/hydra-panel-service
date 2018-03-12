@@ -21,8 +21,10 @@ public class PanelTest {
 	/** Tests getting all panels */
 	@Test
 	public void findAllTest() {
+		//System.out.println("============================================================================hello before =========================================================================");
 		List<SimplePanel> panels = panelRepository.findAll();
 		System.out.println(panels);
+		System.out.println("hello");
 		assertFalse(panels.isEmpty());
 	}
 	

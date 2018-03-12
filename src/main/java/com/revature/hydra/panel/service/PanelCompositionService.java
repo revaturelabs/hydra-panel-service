@@ -87,12 +87,12 @@ public class PanelCompositionService {
 		List<Panel> dest = new LinkedList<Panel>();
 
 		for (SimplePanel curr : src) {
-			Panel panel = new Panel(curr);
-
+			Panel panel = (composePanel(curr));
+			System.out.println(panel);
 			if (!includeDropped && panel.getTrainee().getTrainingStatus() != TrainingStatus.Dropped)
-				dest.add(new Panel(curr));
+				dest.add(panel);
 			else if (includeDropped)
-				dest.add(new Panel(curr));
+				dest.add(panel);
 		}
 		return dest;
 	}

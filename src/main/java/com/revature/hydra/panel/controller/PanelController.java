@@ -55,8 +55,8 @@ public class PanelController {
 	}
 
 	@RequestMapping(value = "/panel/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	@PreAuthorize("hasAnyRole('VP', 'QC', 'TRAINER', 'STAGING','PANEL')")
-	@Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
+	//@PreAuthorize("hasAnyRole('VP', 'QC', 'TRAINER', 'STAGING','PANEL')")
+	//@Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
 	public ResponseEntity<List<Panel>> findAll() {
 		log.debug("Getting all panels");
 		List<Panel> panels = panelService.findAll();
