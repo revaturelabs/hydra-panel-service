@@ -12,7 +12,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,8 +24,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.beans.Panel;
-import com.revature.beans.PanelFeedback;
-import com.revature.beans.PanelStatus;
 import com.revature.hydra.panel.exceptions.MalformedRequestException;
 import com.revature.hydra.panel.service.PanelCompositionMessagingService;
 import com.revature.hydra.panel.service.PanelCompositionService;
@@ -45,6 +42,7 @@ public class PanelController {
 
 	//@Autowired
 	//private TrainingService trainingService;
+	
 	@Autowired
 	private PanelCompositionService panelService;
 	@Autowired
