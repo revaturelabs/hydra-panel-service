@@ -3,4 +3,4 @@ spring:
     name: panel
   cloud:
     config:
-      uri: http://35.182.214.189:8888
+      uri: http://localhost:8888
